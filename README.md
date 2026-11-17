@@ -77,13 +77,13 @@ python mcp_server.py
 ```
 
 ### 3. Model Context Protocol (MCP) Config
-Add to your `claude_desktop_config.json` or agent runner config:
+Add to your `claude_desktop_config.json` or agent runner config, replacing `/absolute/path/to` with the local checkout path:
 ```json
 {
   "mcpServers": {
     "genpark-retail-media-brand-yield-router-skill": {
       "command": "python",
-      "args": ["path/to/genpark-retail-media-brand-yield-router-skill/mcp_server.py"]
+      "args": ["/absolute/path/to/genpark-retail-media-brand-yield-router-skill/mcp_server.py"]
     }
   }
 }
